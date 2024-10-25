@@ -22,7 +22,7 @@
     "react-chartjs-2": "^3.0.4",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
+    "react-icons": "^4.12.0",
     "react-js-pagination": "^3.0.3",
     "react-material-ui-carousel": "^2.3.1",
     "react-redux": "^7.2.4",
@@ -35,8 +35,8 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -58,6 +58,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"http://192.168.29.221:4000"
-
+  "proxy": "http://192.168.29.221:4000"
 }
